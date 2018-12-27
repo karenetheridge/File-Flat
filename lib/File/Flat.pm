@@ -18,7 +18,7 @@ use prefork    'File::Remove';
 
 use vars qw{$VERSION $errstr %modes $AUTO_PRUNE};
 BEGIN {
-	$VERSION = '1.04';
+	$VERSION = '1.05';
 
 	# The main error string
 	$errstr  = '';
