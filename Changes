@@ -1,6 +1,6 @@
 Revision history for Perl extension File::Flat.
 
-{{$NEXT}}
+1.05      2018-12-29 21:06:09Z
         - distribution tooling updates
 
 1.04      2008-03-24
