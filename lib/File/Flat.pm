@@ -1,4 +1,5 @@
 package File::Flat;
+# ABSTRACT: Implements a flat filesystem
 
 # The File::Flat is a static class that provides a unified interface
 # to the filesystem in a way such that directories are abstracted away.
@@ -827,15 +828,9 @@ __END__
 
 =pod
 
-=head1 NAME
-
-File::Flat - Implements a flat filesystem
+=head1 DESCRIPTION
 
 =for stopwords FSI.pm VMS canExecute canOpen canRead canReadWrite canRemove canWrite cp getAppendHandle getReadHandle getReadWriteHandle getWriteHandle isaBinary isaDirectory isaFile isaText makeDirectory
-
-=head1 SYNOPSIS
-
-=head1 DESCRIPTION
 
 File::Flat implements a flat filesystem. A flat filesystem is a filesystem in
 which directories do not exist. It provides an abstraction over any normal
@@ -1119,30 +1114,8 @@ There's something bigger here too, I'm not exactly sure what it is,
 but I think there might be the beginnings of a unified filesystem
 interface here... FSI.pm
 
-=head1 SUPPORT
-
-Bugs should be filed at via the CPAN bug tracker at:
-
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=File-Flat>
-
-For other issues or comments, contact the author
-
-=head1 AUTHORS
-
-Adam Kennedy E<lt>adamk@cpan.orgE<gt>
-
 =head1 SEE ALSO
 
 L<File::Spec>, L<http://ali.as/>
-
-=head1 COPYRIGHT
-
-Copyright 2002 - 2008 Adam Kennedy.
-
-This program is free software; you can redistribute
-it and/or modify it under the same terms as Perl itself.
-
-The full text of the license can be found in the
-LICENSE file included with this module.
 
 =cut
