@@ -16,16 +16,14 @@ use prefork    'File::Copy';
 use prefork    'File::Copy::Recursive';
 use prefork    'File::Remove';
 
-use vars qw{$VERSION $errstr %modes $AUTO_PRUNE};
-BEGIN {
-	$VERSION = '1.05';
+our $VERSION = '1.05';
 
-	# The main error string
-	$errstr  = '';
+# The main error string
+our $errstr  = '';
 
-	# Create a map of all file open modes we support,
-	# and which ones will create a new file if needed.
-	%modes = ( 
+# Create a map of all file open modes we support,
+# and which ones will create a new file if needed.
+our %modes = ( 
 		'<'  => 0, 'r'  => 0, # Read
 		'+<' => 1, 'r+' => 1, # ReadWrite
 		'>'  => 1, 'w'  => 1, # Write
@@ -33,11 +31,7 @@ BEGIN {
 		'>>' => 1, 'a'  => 1  # Append
 		);
 
-	$AUTO_PRUNE = '';
-}
-
-
-
+our $AUTO_PRUNE = '';
 
 
 #####################################################################
