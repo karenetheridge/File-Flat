@@ -831,6 +831,8 @@ __END__
 
 File::Flat - Implements a flat filesystem
 
+=for stopwords FSI.pm VMS canExecute canOpen canRead canReadWrite canRemove canWrite cp getAppendHandle getReadHandle getReadWriteHandle getWriteHandle isaBinary isaDirectory isaFile isaText makeDirectory
+
 =head1 SYNOPSIS
 
 =head1 DESCRIPTION
@@ -839,13 +841,13 @@ File::Flat implements a flat filesystem. A flat filesystem is a filesystem in
 which directories do not exist. It provides an abstraction over any normal
 filesystem which makes it appear as if directories do not exist. In effect,
 it will automatically create directories as needed. This is create for things
-like install scripts and such, as you never need to worry about the existance
+like install scripts and such, as you never need to worry about the existence
 of directories, just write to a file, no matter where it is.
 
 =head2 Comprehensive Implementation
 
 The implementation of File::Flat is extremely comprehensive in scope. It has
-methods for all stardard file interaction taks, the -X series of tests, and
+methods for all standard file interaction tasks, the -X series of tests, and
 some other things, such as slurp.
 
 All methods are statically called, for example, to write some stuff to a file.
@@ -899,7 +901,7 @@ platforms (such as VMS) are believed to work, but require confirmation.
 
 =head2 exists $filename 
 
-Tests for the existance of the file.
+Tests for the existence of the file.
 This is an exact duplicate of the -e function.
 
 =head2 isaFile $filename
@@ -1016,7 +1018,7 @@ The C<write> method is the main method for writing content to a file.
 It takes two arguments, the location to write to, and the content to write, 
 in several forms.
 
-If the file already exists, it will be clobered before writing starts.
+If the file already exists, it will be clobbered before writing starts.
 If the file doesn't exists, the file and any directories will be created as
 needed.
 
@@ -1076,7 +1078,7 @@ The C<remove> method will remove a file, or recursively remove a directory.
 
 If a second (true) argument is provided, then once the file or directory
 has been deleted, the method will the automatically work its way upwards
-pruning (deleting) empty and thus assumably useless directories.
+pruning (deleting) empty and thus presumably useless directories.
 
 Returns true if the deletion (and pruning if requested) was a success, or
 C<undef> otherwise.
@@ -1092,7 +1094,7 @@ Returns true, or C<undef> on error.
 
 =head2 truncate $filename [, $size ]
 
-The C<truncate> method will truncate an existing file to partular size.
+The C<truncate> method will truncate an existing file to a particular size.
 A size of 0 ( zero ) is used if no size is provided. If the file does not
 exists, it will be created, and set to 0. Attempting to truncate a 
 directory will fail.
@@ -1114,7 +1116,7 @@ Function interface to be written, like
 L<File::Spec::Functions>, to provide importable functions.
 
 There's something bigger here too, I'm not exactly sure what it is,
-but I think there might be the beginings of a unified filesystem
+but I think there might be the beginnings of a unified filesystem
 interface here... FSI.pm
 
 =head1 SUPPORT
