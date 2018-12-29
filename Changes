@@ -1,5 +1,8 @@
 Revision history for Perl extension File::Flat.
 
+{{$NEXT}}
+        - distribution tooling updates
+
 1.04      2008-03-24
 	- Removing dependency on File::Slurp
 

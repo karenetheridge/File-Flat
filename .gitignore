@@ -1,0 +1,6 @@
+/.ackrc
+/.build/
+!/.gitignore
+/.latest
+/File-Flat-*/
+/File-Flat-*.tar.gz
