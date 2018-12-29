@@ -17,7 +17,7 @@ use prefork    'File::Copy';
 use prefork    'File::Copy::Recursive';
 use prefork    'File::Remove';
 
-our $VERSION = '1.05';
+our $VERSION = '1.06';
 
 # The main error string
 our $errstr  = '';
