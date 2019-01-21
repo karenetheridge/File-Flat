@@ -1080,6 +1080,8 @@ C<undef> otherwise.
 
 =head2 prune $filename
 
+=for stopwords CVS
+
 For a file that has already been delete, C<prune> will work upwards,
 removing any empty directories it finds.
 
