@@ -1,5 +1,7 @@
 Revision history for Perl extension File::Flat.
 
+{{$NEXT}}
+
 1.06      2020-07-31 16:05:45Z
         - add a $VERSION to the internal File::Flat::Object package
 
