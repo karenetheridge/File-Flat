@@ -514,6 +514,7 @@ sub _andRemove {
 
 
 package File::Flat::Object;
+our $VERSION = '1.06';
 
 # Instantiatable version of File::Flat.
 # 
