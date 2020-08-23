@@ -1,5 +1,7 @@
 Revision history for Perl extension File::Flat.
 
+{{$NEXT}}
+
 1.07      2020-08-23 21:47:59Z
         - restore prereqs from <= 1.04
 

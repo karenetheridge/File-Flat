@@ -17,7 +17,7 @@ use prefork    'File::Copy';
 use prefork    'File::Copy::Recursive';
 use prefork    'File::Remove';
 
-our $VERSION = '1.07';
+our $VERSION = '1.08';
 
 # The main error string
 our $errstr  = '';
@@ -514,7 +514,7 @@ sub _andRemove {
 
 
 package File::Flat::Object;
-our $VERSION = '1.07';
+our $VERSION = '1.08';
 
 # Instantiatable version of File::Flat.
 # 
